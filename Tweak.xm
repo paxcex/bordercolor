@@ -16,16 +16,16 @@
 	[NSString stringWithFormat:@"%@/Library/Preferences/%@", NSHomeDirectory(), @"com.pxcex.bordericonplus.plist"]];
 
 	//Create a NSNumber to hold our boolean value to check if our tweak is enabled
-  NSNumber* isEnabled = [prefs objectForKey:@"enabled"];
+  	NSNumber* isEnabled = [prefs objectForKey:@"enabled"];
 
-    //Let's capture the hex value from libcolorpicker
-  NSString* colorString = [prefs objectForKey:@"saveColor"];
+    	//Let's capture the hex value from libcolorpicker
+ 	NSString* colorString = [prefs objectForKey:@"saveColor"];
 
-    //To use our macro, we need to have it in '0xFFFFFF' format so lets remove the alpha
-  NSArray* subStrings = [colorString componentsSeparatedByString:@":"];
-  NSString* finalString = [subStrings objectAtIndex:0];
+    	//To use our macro, we need to have it in '0xFFFFFF' format so lets remove the alpha
+  	NSArray* subStrings = [colorString componentsSeparatedByString:@":"];
+  	NSString* finalString = [subStrings objectAtIndex:0];
 
-    //Now that our string doesn't contain an alpha value, let's replace our # with 0x for our macro to use
+    	//Now that our string doesn't contain an alpha value, let's replace our # with 0x for our macro to use
 	finalString = [finalString stringByReplacingOccurrencesOfString:@"#"
                                      withString:@"0x"];
 
