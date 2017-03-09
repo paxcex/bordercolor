@@ -1,0 +1,11 @@
+Package: com.pxcex.bordericonplus
+Name: BorderIcon+
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Architecture: iphoneos-arm
+Description: Customise color of your border color icon!
+Maintainer: pxcex
+Author: pxcex
+Section: Tweaks
+Depiction: https://paxcex.github.io/depictions/com.pxcex.bordericonplus/index.html
+Version: 0.0.2-1
+Installed-Size: 268
