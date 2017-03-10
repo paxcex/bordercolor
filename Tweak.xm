@@ -48,7 +48,7 @@
 	}
 	else
 	{
-		//Otherwise, let's just call the default dock
+		
 		return %orig;
 	}
 }
